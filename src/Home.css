@@ -1,0 +1,52 @@
+.intro {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: rgb(220, 49, 49);
+}
+
+.intro h2 {
+    color: rgb(179, 71, 71);
+}
+
+.asset-boundary a {
+    text-decoration: none;
+    color: #341b86;
+}
+
+.asset-boundary a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    margin: 2rem 0;
+    justify-items: center;
+}
+
+.asset-boundary {
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    border: 1px solid #323aae;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .image-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-container {
+        grid-template-columns: 1fr;
+    }
+}
